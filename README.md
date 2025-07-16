@@ -9,6 +9,7 @@ A Python script that analyzes Reddit users' posts and comments to generate detai
 - Outputs a structured User Persona in .txt format
 - Cites which post or comment supports each trait
 - Comprehensive error logging
+- Follows PEP-8 guidelines
 
 ## Tech used
 - Python 3
