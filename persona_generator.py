@@ -35,13 +35,11 @@ def fetch_user_data(username):
     posts, comments = [], []
     
     try:
-        # Fetch posts with delay
         for submission in redditor.submissions.new(limit=10):
             if submission.selftext:
                 posts.append(f"Title: {submission.title}\nBody: {submission.selftext}\n")
             time.sleep(2)
             
-        # Fetch comments with delay
         for comment in redditor.comments.new(limit=20):
             comments.append(f"Comment: {comment.body}\n")
             time.sleep(1)
