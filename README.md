@@ -21,8 +21,16 @@ A Python script that analyzes Reddit users' posts and comments to generate detai
 ````bash
 pip install praw python-dotenv google-generativeai
 ````
-### 2. Create a .env file consisting of the following:
+### 2. Create a .env file manually consisting of the following:
 ````bash
+REDDIT_CLIENT_ID="your_reddit_app_id"
+REDDIT_CLIENT_SECRET="your_reddit_app_secret"
+REDDIT_USER_AGENT="app_name/version_number (by /u/your_reddit_username)"
+GEMINI_API_KEY="your_google_api_key"
+````
+#### Or you can create a .env file by running the following python code:
+````bash
+%%writefile .env
 REDDIT_CLIENT_ID="your_reddit_app_id"
 REDDIT_CLIENT_SECRET="your_reddit_app_secret"
 REDDIT_USER_AGENT="app_name/version_number (by /u/your_reddit_username)"
